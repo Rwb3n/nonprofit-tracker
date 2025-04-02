@@ -102,13 +102,33 @@ The AI assistant is **NOT** responsible for:
      ```
    - If the human needs the AI to work on specific documentation tasks, these should be reflected in the todo.md file.
 
-4. **Responsibility Separation:**
+4. **Todo Scope Management:**
+   - **Scope Freezing Rule**: Once work has begun on a todo item, NO ADDITIONAL SCOPE may be added to that specific task.
+   - When a task is in progress, maintain its original scope boundaries exactly as defined.
+   - If additional related work is identified during task execution:
+     - DO NOT expand the current task
+     - DO NOT create subtasks that weren't in the original scope
+     - INSTEAD, add these to a dedicated "Future Recommendations" section in todo.md
+   - Example structure for capturing scope expansion ideas:
+     ```markdown
+     ## Future Recommendations
+     - [ ] Consider adding a troubleshooting section to the Data Model document 
+     - [ ] Create additional validation test cases for the Renewal Flow
+     - [ ] Enhance the Dashboard template with mobile-specific layout guidance
+     ```
+   - This approach ensures:
+     - Tasks remain focused and bounded
+     - Work can be completed in reasonable timeframes
+     - Scope creep is prevented
+     - New ideas are still captured for future prioritization
+
+5. **Responsibility Separation:**
    - **AI Assistant**: Responsible for todo.md and all documentation creation/maintenance
    - **Human Team**: Responsible for Progress.md and all implementation work
    - The AI should recommend documentation updates to the human but should not indicate these are complete in Progress.md
    - The human will review the AI's documentation work and update Progress.md accordingly
 
-5. **Verification Process:**
+6. **Verification Process:**
    - **ALWAYS** double-check work before marking as complete in todo.md:
      1. Verify frontmatter is complete and accurate
      2. Confirm all cross-references and links work
@@ -117,7 +137,7 @@ The AI assistant is **NOT** responsible for:
      5. Update todo.md to reflect completed work
      6. Notify the human of completed documentation tasks so they can update Progress.md if appropriate
 
-6. **Modular Documentation Structure:**  
+7. **Modular Documentation Structure:**  
    - Follow the established folder structure for each project with subfolders for **Docs, Flows, Tests, Reports**.  
    - Prefix each document with the project code (e.g., **NMT-** for Nonprofit Membership Tracking).
    - Example Folder Structure:  
@@ -133,7 +153,7 @@ The AI assistant is **NOT** responsible for:
              └─ README.md     # Project overview
      ```  
 
-7. **Documentation Standards:**
+8. **Documentation Standards:**
    - Create and maintain README.md files in each directory explaining its purpose
    - Structure all design documents consistently with:
      - Overview section
@@ -143,7 +163,7 @@ The AI assistant is **NOT** responsible for:
    - Include cross-references between related documents
    - Maintain consistent formatting for similar content types
 
-8. **Deprecation Process:**
+9. **Deprecation Process:**
    - When a document is being replaced or consolidated, add a deprecation notice:
      ```markdown
      ---
@@ -156,5 +176,27 @@ The AI assistant is **NOT** responsible for:
      This document has been deprecated and replaced by [New Document Name](path/to/new-document.md).
      Please refer to the new document for the most current information.
      ```
+
+10. **Changelog Maintenance:**
+   - The **CHANGELOG.md** file in the root directory serves as the central record of all documentation changes.
+   - This file must be updated at the end of each work session to record all documentation activities.
+   - Follow the established format:
+     ```markdown
+     ## YYYY-MM-DD (Date of changes)
+     
+     ### Added
+     - New documents or features added
+     
+     ### Updated
+     - Changes to existing documents
+     
+     ### Fixed
+     - Bug fixes or corrections
+     
+     ### Removed
+     - Deprecated or removed content
+     ```
+   - Each entry should include links to affected files where applicable.
+   - The CHANGELOG.md file helps track progress, provides context for changes, and serves as a historical record.
 
 This workspace organization ensures clear separation of responsibilities and maintains high documentation quality and consistency across the project.

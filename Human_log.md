@@ -15,6 +15,10 @@ author: "Rwb3n"
 ## To be parsed and transformed by AI at EOD into Progress.md
 
 ----
+- 2025-04-02 14:42:07: fixed a few more considerations, generated a bunch of templates
+
+- 2025-04-02 14:16:15: more changes to the documentation and ai assistant guide
+- 2025-04-02 13:54:11: toninuing on with object schema...
 
 - 2025-04-02 13:40:16: ensure the ai agent understands it's reponsibilities: planning & analysis, design, documentation
 - 2025-04-02 13:12:33: ran consistency report

@@ -1,7 +1,7 @@
 /* 
  * DEPRECATED: This file will be deleted after review.
- * Content is being merged into NMT-Data_Model_Design.md as part of the documentation consistency initiative.
- * Please refer to Docs/NMT-Data_Model_Design.md for the most up-to-date data model documentation.
+ * Content is being merged into NMT-Data_Model_Design_Consolidated.md as part of the documentation consistency initiative.
+ * Please refer to Docs/NMT-Data_Model_Design_Consolidated.md for the most up-to-date data model documentation.
  */
 
 ---

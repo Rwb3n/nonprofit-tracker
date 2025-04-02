@@ -1,145 +1,100 @@
-# Nonprofit Membership Tracking Project
+---
+title: "Nonprofit Membership Tracking - Project Overview"
+project: "Nonprofit Membership Tracking"
+type: "Documentation"
+phase: "Design"
+status: "Active"
+version: "1.0"
+created: "2025-04-07"
+updated: "2025-04-07"
+author: "Documentation Team"
+---
 
-## Project Overview
+# Nonprofit Membership Tracking - Project Overview
 
-The Nonprofit Membership Tracking (NMT) solution provides a comprehensive system for nonprofit organizations to efficiently track, manage, and engage with their membership base. Built on the Salesforce and NPSP platform, this solution streamlines membership operations, enhances member engagement, and provides valuable insights to drive organizational growth.
+## About This Project
 
-The project follows standardized documentation practices and maintains consistency across all technical specifications, design documents, and implementation guides to ensure clarity and maintainability.
+The Nonprofit Membership Tracking system is a comprehensive solution designed for nonprofit organizations to manage their membership base effectively. The system streamlines the entire membership lifecycle from onboarding to renewal, handles payments, tracks event participation, and provides detailed analytics through reports and dashboards.
 
-## Project Document Index
+### Key Features
 
-### Design Documentation
+- **Membership Management**: Track individual and organizational memberships with various levels and benefits
+- **Renewal Processing**: Automated reminders and streamlined renewal workflows
+- **Payment Handling**: Process payments, handle failed transactions, and maintain payment history
+- **Event Participation**: Manage event registrations, track attendance, and calculate engagement
+- **Engagement Scoring**: Quantify member involvement through a sophisticated scoring system
+- **Dashboard Analytics**: Visual representations of membership trends, financial data, and engagement metrics
 
-| Document | Description |
-|----------|-------------|
-| [Data Model Design](Docs/NMT-Data_Model_Design.md) | Detailed specification of custom objects, fields, and relationships that comprise the data architecture of the solution |
-| [Dashboard Component Specs](Docs/NMT-Dashboard_Component_Specs.md) | Comprehensive specifications for the membership dashboard, including charts, metrics, filters, and layouts |
-| [Implementation Plan](Docs/NMT-Implementation_Plan.md) | Project implementation timeline, resource requirements, and phase breakdown for the entire project |
-| [Project Plan](NMT-Project_Plan.md) | Overall project plan including approach, timeline, deliverables, and success criteria |
-| [Progress Tracker](Progress.md) | Current implementation status, backlog items, and upcoming milestones |
+## Project Structure
 
-### Documentation Standards
+This project is organized into several directories containing specific types of documentation:
 
-| Document | Description |
-|----------|-------------|
-| [Consistency Todo List](consistency_todo.md) | Comprehensive plan for implementing documentation consistency across the project |
+### `/Docs`
 
-### Flow Designs
+Contains the core documentation for the project, including:
 
-| Document | Description |
-|----------|-------------|
-| [Membership Onboarding Flow Design](Flows/NMT-Membership_Onboarding_Flow_Design.md) | Detailed design specification for the flow that handles new member registration and initial setup |
-| [Membership Renewal Flow Test Cases](Tests/NMT-Membership_Renewal_Flow_Test_Cases.md) | Comprehensive test cases for the membership renewal automation process |
+- **Data Model Design**: Detailed description of all objects, fields, relationships, and validation rules
+- **System Architecture**: Overview of the technical architecture and integration points
+- **User Guides**: End-user documentation for system administrators
 
-### Testing Documentation
+### `/Flows`
 
-| Document | Description |
-|----------|-------------|
-| [Membership Onboarding Flow Test Cases](Tests/NMT-Membership_Onboarding_Flow_Test_Cases.md) | Test cases and validation results for membership onboarding flow |
+Contains design documents for all Salesforce flows that power the application:
 
-### Reports & Analytics
+- **Membership Onboarding Flow**: Process for creating new memberships
+- **Membership Renewal Flow**: Process for renewing existing memberships
+- **Payment Status Handling Flow**: Logic for processing payments and handling failures
+- **Event Participation Flow**: Process for managing event registrations and attendance
 
-| Document | Description |
-|----------|-------------|
-| [Dashboard Design](Reports/NMT-Dashboard_Design.md) | Dashboard and report specifications for membership analytics |
+### `/Tests`
 
-## Project Objectives
+Contains test case documentation for validating system functionality:
 
-- Implement a scalable membership tracking system on Salesforce NPSP
-- Automate member onboarding, renewals, and communications
-- Provide actionable insights through reports and dashboards
-- Create a foundation for future engagement tracking
+- **Membership Onboarding Flow Test Cases**: Validation scenarios for new member signup
+- **Membership Renewal Flow Test Cases**: Validation scenarios for membership renewals
+- **Payment Status Handling Flow Test Cases**: Tests for payment processing scenarios
+- **Event Participation Flow Test Cases**: Tests for event registration and attendance tracking
 
-## Key Features
+### `/Reports`
 
-1. **Membership Management**
-   - Track individual and organizational memberships
-   - Support multiple membership levels and benefits
-   - Automated renewal reminders and processing
+Contains specifications and designs for reports and dashboards:
 
-2. **Member Engagement**
-   - Event participation tracking
-   - Engagement scoring
-   - Communication preferences and history
+- **Dashboard Design**: Layout and components for the main system dashboards
+- **Financial Reports Specs**: Detailed requirements for financial reporting
+- **Engagement Reports Specs**: Requirements for member engagement reporting
 
-3. **Financial Tracking**
-   - Membership dues processing
-   - Payment history
-   - Revenue forecasting
+### Root Directory Files
 
-4. **Reporting & Analytics**
-   - Executive membership dashboard
-   - Member acquisition and retention metrics
-   - Financial performance tracking
+The root directory contains several important files:
 
-## Technology Stack
-
-- **Platform**: Salesforce with NPSP (Nonprofit Success Pack)
-- **Development Tools**: Visual Studio Code, Salesforce CLI
-- **Key Components**: 
-  - Custom Objects
-  - Flow Automation
-  - Lightning Web Components
-  - Salesforce Reports & Dashboards
-
-## Technical Specifications
-
-- **NPSP Version**: 3.225
-- **API Version**: 58.0
-- **Primary Programming**: Declarative (Flow, Process Builder)
-- **Additional Components**: Custom Objects, Reports, Dashboards
-
-## Implementation Highlights
-
-### Custom Objects
-
-- **Membership**: Central tracking object
-- **Membership Level**: Configuration object
-- **Membership History**: Audit and tracking
-- **Member Event Participation**: Engagement junction object
-- **Event**: Event tracking and management
-
-### Process Automation
-
-- New Member Registration Flow
-- Membership Renewal Process
-- Payment Status Handling
-- Automated Communications
-- Status Updates
-
-### Reporting Capabilities
-
-- Executive Membership Overview
-- Operational Member Tracking
-- Development Team Engagement Analysis
-- Custom Report Types for Membership Analysis
+- **README.md**: This file - provides an overview of the project
+- **CHANGELOG.md**: Chronological record of all documentation changes and updates
+- **Progress.md**: Tracks ongoing Human User Tasks
+- **todo.md**: Tracks ongoing AI Assistant tasks
+- **AI_ASSISTANT_GUIDE_FOR_PROJECT_WORKSPACES.md**: Guidelines for AI documentation assistance
 
 ## Getting Started
 
-1. Review the [Implementation Plan](Docs/NMT-Implementation_Plan.md) to understand the project timeline and requirements
-2. Examine the [Data Model Design](Docs/NMT-Data_Model_Design.md) to understand the solution architecture
-3. Study the [Flow Designs](Flows/NMT-Membership_Onboarding_Flow_Design.md) to understand the core business processes
-4. Review the [Consistency Todo List](consistency_todo.md) to understand our documentation standards approach
+To understand this project:
 
-## Implementation Phases
+1. Start by reviewing the [Data Model Design](Docs/NMT-Data_Model_Design_Consolidated.md) to understand the underlying data structure
+2. Explore the flow designs in the `/Flows` directory to understand the business processes
+3. Review the dashboard design in `/Reports/NMT-Dashboard_Design.md` to see the analytics capabilities
+4. Check the test cases in `/Tests` to understand how the system is validated
 
-1. **Discovery & Planning** (Weeks 1-2)
-2. **Configuration & Development** (Weeks 3-7)
-3. **Testing** (Weeks 8-9)
-4. **Deployment & Training** (Weeks 10-12)
-5. **Documentation Consistency** (Week 13)
-6. **Post-Launch Support** (Weeks 14-17)
+## Implementation Timeline
 
-## Project Timeline
+| Phase | Description | Status |
+|-------|-------------|--------|
+| Discovery | Requirements gathering and stakeholder interviews | Completed |
+| Design | Data model, flow, and dashboard design | In Progress |
+| Development | Building and configuring the solution | Not Started |
+| Testing | Validation of functionality | Not Started |
+| Deployment | Implementation to production | Not Started |
+| Training | User and administrator training | Not Started |
 
-- **Setup Phase**: 2025-03-25 to 2025-03-26
-- **Design Phase**: 2025-03-26 to 2025-03-28
-- **Build Phase**: 2025-03-28 to 2025-04-03
-- **Testing Phase**: 2025-04-03 to 2025-04-05
-- **Documentation Consistency Phase**: 2025-04-06 to 2025-04-10
-- **Deployment & Training Phase**: 2025-04-10 to 2025-04-30
-- **Post-Launch Support Phase**: 2025-05-01 to 2025-05-31
+## Contact Information
 
-## Project Contact
-
-Project Manager: Rwb3n's AI
+- **Project Manager**: Sarah Johnson (sarah.johnson@example.org)
+- **Lead Developer**: Michael Chen (michael.chen@example.org)
+- **Documentation Team**: documentation@example.org

@@ -143,7 +143,7 @@ The Payment Status Handling Flow automates the process of monitoring and updatin
 
 ## Related Documents
 
-- [Data Model Design](../Docs/NMT-Data_Model_Design.md)
+- [Data Model Design](../Docs/NMT-Data_Model_Design_Consolidated.md)
 - [Membership Onboarding Flow Design](NMT-Membership_Onboarding_Flow_Design.md)
 - [Membership Renewal Flow Design](NMT-Membership_Renewal_Flow_Design.md)
 - [Dashboard Design](../Reports/NMT-Dashboard_Design.md)

@@ -71,5 +71,5 @@ All flow design documents adhere to the following standards:
 
 - **[Membership Onboarding Flow Test Cases](../Tests/NMT-Membership_Onboarding_Flow_Test_Cases.md)**: Validation test cases for the membership onboarding flow
 - **[Membership Renewal Flow Test Cases](../Tests/NMT-Membership_Renewal_Flow_Test_Cases.md)**: Validation test cases for the membership renewal flow
-- **[Data Model Design](../Docs/NMT-Data_Model_Design.md)**: Specification of data objects used by the flows
+- **[Data Model Design](../Docs/NMT-Data_Model_Design_Consolidated.md)**: Specification of data objects used by the flows
 - **[Dashboard Design](../Reports/NMT-Dashboard_Design.md)**: Dashboards that display flow outcomes 

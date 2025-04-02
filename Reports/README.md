@@ -5,34 +5,34 @@ type: "Documentation"
 phase: "Implementation"
 status: "Active"
 version: "1.0"
-created: "2025-04-05"
-updated: "2025-04-05"
+created: "2025-04-06"
+updated: "2025-04-07"
 author: "Documentation Team"
 ---
 
-# Nonprofit Membership Tracking Reports & Dashboards
+# Nonprofit Membership Tracking - Reports Directory
+
+## Purpose
 
 This directory contains all documentation related to reports and dashboards for the Nonprofit Membership Tracking project. These documents define the analytical tools that provide insights into membership status, trends, and engagement metrics.
 
 ## Document Index
 
-| Document | Description |
-|----------|-------------|
-| [NMT-Dashboard_Design.md](NMT-Dashboard_Design.md) | Comprehensive dashboard design documentation, including layout, components, filters, and intended audience. This is the primary document for dashboard specifications. |
+- **[NMT-Dashboard_Design.md](NMT-Dashboard_Design.md)**: Comprehensive dashboard design documentation including layout, components, filters, and intended audience. This is the primary document for dashboard specifications.
+
+- **[NMT-Financial_Reports_Specs.md](NMT-Financial_Reports_Specs.md)**: Detailed specifications for financial reports, including revenue tracking, payment status monitoring, forecasting, trend analysis, and payment method optimization.
+
+- **[NMT-Engagement_Reports_Specs.md](NMT-Engagement_Reports_Specs.md)**: Detailed specifications for member engagement reports, including engagement scoring model, member engagement dashboard, engagement profiles, event analytics, communication effectiveness, and engagement risk/opportunity analysis.
 
 ## Planned Documents
 
-The following report specification documents are planned for creation:
+The following documents are planned for future creation:
 
-| Document | Description |
-|----------|-------------|
-| NMT-Membership_Metrics_Report_Specs.md | Detailed specifications for membership metrics reports, including status distributions, acquisition channels, and retention rates. |
-| NMT-Financial_Reports_Specs.md | Specifications for financial reporting on membership dues, revenue forecasting, and payment status tracking. |
-| NMT-Engagement_Reports_Specs.md | Specifications for member engagement reporting, including event participation, communication response rates, and engagement scoring. |
+- **NMT-Membership_Metrics_Report_Specs.md**: Specifications for membership metrics reports, including status distributions, acquisition channels, and retention rates.
 
-## Dashboard Components
+## Major Component Sections
 
-The membership dashboard includes the following major component sections:
+The membership dashboard contains the following major component sections:
 
 1. **Membership Overview**: High-level metrics showing current membership status and trends
 2. **Acquisition & Retention**: New member growth and retention analysis
@@ -42,25 +42,27 @@ The membership dashboard includes the following major component sections:
 
 ## Document Usage
 
-The reports and dashboard documentation in this directory is primarily used by:
-- System Administrators configuring analytics
-- Executive Management for understanding available insights
-- Membership Staff for learning dashboards and reports
-- Developers implementing custom reporting components
+The reports and dashboard documentation is primarily used by:
 
-## Documentation Standards
+- **System Administrators**: For configuring and maintaining the reporting system
+- **Executive Management**: For understanding the metrics being tracked and reported
+- **Membership Staff**: For understanding how to utilize reports in daily operations
+- **Developers**: For implementing the specified reports and dashboards
 
-All reporting documentation in this directory follows these standards:
-- Includes standardized frontmatter with metadata
-- Provides clear specifications for each dashboard and report
-- Specifies data sources, fields, and filtering options
-- Includes mockups or wireframes of dashboard layouts
-- Documents refresh schedules and sharing requirements
-- Specifies any conditional formatting or threshold alerts
+## Document Standards
+
+All report and dashboard documentation in this directory follows these standards:
+
+1. **Standardized Frontmatter**: Consistent metadata format for all documents
+2. **Clear Specifications**: Each dashboard and report is clearly specified
+3. **Data Sources**: Each component includes specifications of data sources and fields
+4. **Filtering Options**: Clear documentation of available filters and parameters
+5. **Refresh Schedules**: Each report includes refresh frequency and timing
+6. **Conditional Formatting**: Documentation of any threshold-based alerts or highlighting
 
 ## Related Documents
 
 - Data model documentation is in the [Docs directory](../Docs/)
 - Process flow documentation is in the [Flows directory](../Flows/)
 - Test case documentation is in the [Tests directory](../Tests/)
-- Dashboard component specifications are in [Docs/NMT-Dashboard_Component_Specs.md](../Docs/NMT-Dashboard_Component_Specs.md) (being consolidated into this directory) 
+- Dashboard component specifications are being consolidated into this directory 
