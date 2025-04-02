@@ -1,7 +1,0 @@
-setup.py
-timestamp_logger.py
-obsidian_logger.egg-info/PKG-INFO
-obsidian_logger.egg-info/SOURCES.txt
-obsidian_logger.egg-info/dependency_links.txt
-obsidian_logger.egg-info/entry_points.txt
-obsidian_logger.egg-info/top_level.txt
