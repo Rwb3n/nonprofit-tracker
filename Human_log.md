@@ -15,5 +15,19 @@ author: "Rwb3n"
 ## To be parsed and transformed by AI at EOD into Progress.md
 
 ----
+
+- 2025-04-02 12:55:58: added 'validation rules & record types' checkboxes to progress.md
+- 2025-04-02 12:55:29: check for 'participation' object consistency across documentation
+
+- 2025-04-02 12:36:37: question to ask myself: key tasks to design for AI: audit, evaluate, refactor
+- 2025-04-02 12:34:30: question to ask myself: can i create a import file with AI for schema straight into salesforce?
+
+- 2025-04-02 12:18:21: add to the 'AI USER GUIDE FOR PROJECT WORKSPACES' the following instructions: for each salesforce app project custom object prefix, and instructions checkbox for: allow reports, allow activities, track field history
+- 2025-04-02 12:14:51: making sure the nonprofit tracker objects all have 'npt_' prefix
+
+- 2025-04-02 12:14:26: posted my update on the salesforce discord to network
+- 2025-04-02 11:55:33: in docs folder, data structure.md, following along check list to implement custom objects
+
+- 2025-04-02 11:52:51: beginning progress.md checklist for the project
 - 2025-04-02 11:42:17: testing 1 2 3
 

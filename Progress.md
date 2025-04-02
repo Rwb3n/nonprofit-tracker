@@ -23,12 +23,18 @@ author: "Project Team"
 
 ### Implementation Backlog
 - [ ] Data Model Implementation - Create custom objects and fields
-  - [ ] Membership object and fields
-  - [ ] Membership Level object and fields
+  - [x] Membership object and fields
+  - [ ] *human added* Membership Validation Rules & Record Types
+  - [x] Membership Level object and fields
+  - [ ] *human added* Membership Level Validation Rules & Record Types
   - [ ] Membership History object and fields
+  - [ ] *human added* Membership History Validation Rules & Record Types
   - [ ] Member Event Participation object and fields
+  - [ ] *human added* Participation Validation Rules & Record Types
   - [ ] Event object and fields
+  - [ ] *human added* Event Validation Rules & Record Types
   - [ ] Custom fields on Contact/Account objects
+  - [ ] *human added* Contact/Account Validation Rules & Record Types
 - [ ] Flow Development
   - [ ] Build Membership Onboarding Flow
   - [ ] Build Membership Renewal Flow
