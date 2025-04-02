@@ -1,9 +1,13 @@
 ---
-Title: Nonprofit Membership Tracking - Membership Onboarding Flow
-Project: Nonprofit Membership Tracking
-Phase: Build
-Status: Completed
-Last Updated: 2025-03-30
+title: "Nonprofit Membership Tracking - Membership Onboarding Flow"
+project: "Nonprofit Membership Tracking"
+type: "Flow"
+phase: "Build"
+status: "Completed"
+version: "1.0"
+created: "2025-03-28"
+updated: "2025-03-30"
+author: "Project Team"
 ---
 
 # Membership Onboarding Flow Design

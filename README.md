@@ -69,5 +69,4 @@ The Nonprofit Membership Tracking (NMT) solution provides a comprehensive system
 
 ## Project Contact
 
-Project Manager: [Your Name]
-Email: [your.email@example.com] 
+Project Manager: Rwb3n's AI

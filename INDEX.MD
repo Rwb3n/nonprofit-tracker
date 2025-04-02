@@ -1,8 +1,13 @@
 ---
-Title: Nonprofit Membership Tracking - Project Index
-Project: Nonprofit Membership Tracking
-Status: In Progress
-Last Updated: 2025-03-31
+title: "Nonprofit Membership Tracking - Project Index"
+project: "Nonprofit Membership Tracking"
+type: "Documentation"
+phase: "Planning"
+status: "In Progress"
+version: "1.0"
+created: "2025-03-31"
+updated: "2025-03-31"
+author: "Project Team"
 ---
 
 # 🗂 Nonprofit Membership Tracking - Project Index

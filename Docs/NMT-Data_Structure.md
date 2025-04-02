@@ -1,9 +1,13 @@
 ---
-Title: Nonprofit Membership Tracking - Data Structure
-Project: Nonprofit Membership Tracking
-Phase: Design
-Status: Completed
-Last Updated: 2025-03-28
+title: "Nonprofit Membership Tracking - Data Structure"
+project: "Nonprofit Membership Tracking"
+type: "Documentation"
+phase: "Design"
+status: "Completed"
+version: "1.0"
+created: "2025-03-26"
+updated: "2025-03-28"
+author: "Project Team"
 ---
 
 # Nonprofit Membership Tracking - Data Structure

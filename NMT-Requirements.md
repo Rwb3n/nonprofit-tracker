@@ -1,9 +1,13 @@
 ---
-Title: Nonprofit Membership Tracking - Requirements Document
-Project: Nonprofit Membership Tracking
-Phase: Planning
-Status: Draft
-Last Updated: 2025-03-25
+title: "Nonprofit Membership Tracking - Requirements Document"
+project: "Nonprofit Membership Tracking"
+type: "Documentation"
+phase: "Planning"
+status: "Draft"
+version: "1.0"
+created: "2025-03-25"
+updated: "2025-03-25"
+author: "Project Team"
 ---
 
 # Nonprofit Membership Tracking - Requirements Document

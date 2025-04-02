@@ -1,9 +1,13 @@
 ---
-Title: Nonprofit Membership Tracking - Dashboard Design
-Project: Nonprofit Membership Tracking
-Phase: Build
-Status: In Progress
-Last Updated: 2025-03-31
+title: "Nonprofit Membership Tracking - Dashboard Design"
+project: "Nonprofit Membership Tracking"
+type: "Report"
+phase: "Build"
+status: "In Progress"
+version: "1.0"
+created: "2025-03-29"
+updated: "2025-03-31"
+author: "Analytics Team"
 ---
 
 # Membership Tracking Dashboard Design

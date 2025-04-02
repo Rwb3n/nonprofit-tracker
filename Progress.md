@@ -1,8 +1,13 @@
 ---
-Title: Nonprofit Membership Tracking - Progress Tracker
-Project: Nonprofit Membership Tracking
-Status: Implementation Phase
-Last Updated: 2025-03-31
+title: "Nonprofit Membership Tracking - Progress Tracker"
+project: "Nonprofit Membership Tracking"
+type: "Documentation"
+phase: "Implementation"
+status: "In Progress"
+version: "1.0"
+created: "2025-03-25"
+updated: "2025-03-31"
+author: "Project Team"
 ---
 
 ## Progress Tracker - Nonprofit Membership Tracking
@@ -14,6 +19,7 @@ Last Updated: 2025-03-31
 - [x] Dashboard Component Specifications - Designed comprehensive dashboards
 - [x] Implementation Plan - Created detailed 16-week implementation timeline
 - [x] Test Case Documentation - Created comprehensive test cases for membership renewal flow
+- [x] Standardised all frontmatter to comply with the format in 'AI User Guide', making documentation more consistent and easier to navigate
 
 ### Implementation Backlog
 - [ ] Data Model Implementation - Create custom objects and fields

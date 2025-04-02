@@ -1,9 +1,13 @@
 ---
-Title: Nonprofit Membership Tracking - Flow Test Cases
-Project: Nonprofit Membership Tracking
-Phase: Testing
-Status: In Progress
-Last Updated: 2025-03-31
+title: "Nonprofit Membership Tracking - Flow Test Cases"
+project: "Nonprofit Membership Tracking"
+type: "Test"
+phase: "Testing"
+status: "In Progress"
+version: "1.0"
+created: "2025-03-30"
+updated: "2025-03-31"
+author: "QA Team"
 ---
 
 # Membership Onboarding Flow Test Cases
