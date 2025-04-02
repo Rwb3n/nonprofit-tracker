@@ -9,7 +9,8 @@ import datetime
 
 # Get the script directory and parent directory
 script_dir = os.path.dirname(os.path.abspath(__file__))
-log_file = os.path.join(script_dir, "human_log.md")
+parent_dir = os.path.dirname(script_dir)
+log_file = os.path.join(parent_dir, "human_log.md")
 
 print(f"Logging activities to: {log_file}")
 print("Enter your activities (type 'exit' to stop)")
