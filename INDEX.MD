@@ -1,3 +1,9 @@
+/* 
+ * DEPRECATED: This file will be deleted after review.
+ * Content is being merged into README.md as part of the documentation consistency initiative.
+ * Please refer to README.md for the most up-to-date project index.
+ */
+
 ---
 title: "Nonprofit Membership Tracking - Project Index"
 project: "Nonprofit Membership Tracking"

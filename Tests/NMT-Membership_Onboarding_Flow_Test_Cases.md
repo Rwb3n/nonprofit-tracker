@@ -1,3 +1,9 @@
+/* 
+ * DEPRECATED: This file will be renamed to NMT-Membership_Onboarding_Flow_Test_Cases.md after review.
+ * This change is part of the documentation consistency initiative to make file names more specific.
+ * Please refer to Tests/NMT-Membership_Onboarding_Flow_Test_Cases.md for the most up-to-date test case documentation.
+ */
+
 ---
 title: "Nonprofit Membership Tracking - Flow Test Cases"
 project: "Nonprofit Membership Tracking"

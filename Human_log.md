@@ -16,6 +16,9 @@ author: "Rwb3n"
 
 ----
 
+- 2025-04-02 13:40:16: ensure the ai agent understands it's reponsibilities: planning & analysis, design, documentation
+- 2025-04-02 13:12:33: ran consistency report
+
 - 2025-04-02 12:55:58: added 'validation rules & record types' checkboxes to progress.md
 - 2025-04-02 12:55:29: check for 'participation' object consistency across documentation
 

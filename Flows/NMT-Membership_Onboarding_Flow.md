@@ -1,3 +1,9 @@
+/* 
+ * DEPRECATED: This file will be deleted after review.
+ * Content is being merged into NMT-Membership_Onboarding_Flow_Design.md as part of the documentation consistency initiative.
+ * Please refer to Flows/NMT-Membership_Onboarding_Flow_Design.md for the most up-to-date flow design documentation.
+ */
+
 ---
 title: "Nonprofit Membership Tracking - Membership Onboarding Flow"
 project: "Nonprofit Membership Tracking"
