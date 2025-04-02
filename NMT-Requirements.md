@@ -232,14 +232,20 @@ The system will support three primary user profiles:
    - Help text must be available for complex fields and processes
 
 3. **Maintainability**
-   - Solution must be documented for future administrators
-   - Custom fields must include appropriate descriptions
-   - Reports and dashboards must have clear naming conventions
+   - Solution must be thoroughly documented for future administrators according to established project standards.
+   - Custom fields must include appropriate descriptions.
+   - Reports and dashboards must have clear naming conventions.
+   - Documentation must adhere to the project's **Documentation Style Guide** and utilize standardized **Templates**.
 
 4. **Extensibility**
    - Design must allow for future addition of online self-service
    - Design must support potential future integration with external systems
    - Data model must accommodate potential future membership types
+
+5. **Documentation Standards Compliance**
+   - All project documentation must conform to the standards outlined in `Docs/NMT-Documentation_Style_Guide.md`.
+   - All new documents must utilize the templates provided in `Docs/Templates/`.
+   - Documentation must be consistently structured and cross-referenced.
 
 ## Constraints
 

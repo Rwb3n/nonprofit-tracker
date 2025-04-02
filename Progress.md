@@ -50,8 +50,25 @@ This document tracks the overall progress of the Nonprofit Membership Tracking p
 ## In Progress Tasks
 
 ### Build & Configuration
-- [ ] Custom object creation
-- [ ] Field configuration
+- [x] Custom object creation
+	- [x] membership
+	- [x] membership level
+	- [x] membership history
+	- [x] Event
+	- [x] Membership Event Participation
+- [x] Field configuration
+	- [x] membership
+	- [x] membership level
+	- [x] membership history
+	- [x] event
+	- [x] membership event participation
+- [ ] Standard Object Custom Fields (ensuring these are prefixed)
+	- [x] Contact
+		- [x] Formula Fields 
+			- [ ] 2 remain for solving: Last event attended, total events attended
+	- [x] Account
+		- [x] added membership status formula guide to [[NMT-Data_Model_Design_Consolidated]]
+		- [ ] 1 remains, Member contact roll up
 - [ ] Page layouts
 - [ ] Role hierarchy setup
 - [ ] Permission sets
@@ -71,11 +88,11 @@ This document tracks the overall progress of the Nonprofit Membership Tracking p
 - [ ] User acceptance testing preparation (5% complete)
 
 ### Documentation
-- [ ] Data model documentation consolidation (30% complete)
-- [ ] Dashboard documentation consolidation (20% complete)
-- [ ] Flow documentation consolidation (40% complete)
-- [ ] Test cases for payment status handling flow (10% complete)
-- [ ] Test cases for event participation flow (0% complete)
+- [x] Data model documentation consolidation
+- [x] Dashboard documentation consolidation
+- [x] Flow documentation consolidation
+- [x] Test cases for payment status handling flow 
+- [x] Test cases for event participation flow
 
 ## Implementation Backlog
 
@@ -118,25 +135,47 @@ This document tracks the overall progress of the Nonprofit Membership Tracking p
 
 ## Project Milestones
 
-| Milestone | Target Date | Status |
-|-----------|-------------|--------|
-| Project Kickoff | 2025-01-15 | Completed |
-| Requirements Finalization | 2025-02-01 | Completed |
-| Design Approval | 2025-02-15 | Completed |
-| Development Sprint 1 | 2025-03-01 | In Progress |
-| Development Sprint 2 | 2025-03-15 | Not Started |
-| Development Sprint 3 | 2025-03-29 | Not Started |
-| Documentation Consistency | 2025-04-15 | In Progress |
-| Development Sprint 4 | 2025-04-29 | Not Started |
-| User Testing | 2025-05-15 | Not Started |
-| Final Deployment | 2025-06-01 | Not Started |
-| Post-Implementation Review | 2025-06-15 | Not Started |
+| Milestone                  | Target Date | Status      |
+| -------------------------- | ----------- | ----------- |
+| Project Kickoff            | 2025-01-15  | Completed   |
+| Requirements Finalization  | 2025-02-01  | Completed   |
+| Design Approval            | 2025-02-15  | Completed   |
+| Development Sprint 1       | 2025-03-01  | In Progress |
+| Development Sprint 2       | 2025-03-15  | Not Started |
+| Development Sprint 3       | 2025-03-29  | Not Started |
+| Documentation Consistency  | 2025-04-15  | In Progress |
+| Development Sprint 4       | 2025-04-29  | Not Started |
+| User Testing               | 2025-05-15  | Not Started |
+| Final Deployment           | 2025-06-01  | Not Started |
+| Post-Implementation Review | 2025-06-15  | Not Started |
 
 ## Notes & Issues
 
+**2025-04-02**:
+- Have to review the following custom fields in Account:
+	- Last Event Attended 
+	- Events Attended (YTD)
+
+- Boolean formulas in standard objects can't use picklists. had to find solution:
+	- [[NMT-Data_Model_Design_Consolidated#Is Member (Contact)]]
+		- instead of =, use ISPICKVAL
+	- [[NMT-Data_Model_Design_Consolidated#Membership Status (Contact)]]
+		- similar as above, but if i want text rather than true/false, then I want to use TEXT
+- Some formulas which might've been seen as obvious weren't documented.
+	- i.e Contact custom field 'Membership Since': ``npt_Current_Membership__r.Member_Since__c``
+	- 'Member Contacts' Rollup Summary needs solving.
+
+**2025-04-02**:
 - Documentation team has completed design and documentation tasks
 - Build & Configuration tasks are handled by the development team and are in progress
 - Documentation standardization activities planned for April to ensure consistency across all project documents
 - Resource allocation for Sprint 4 needs confirmation
 - Pending decision on additional reporting requirements from Finance department
-- Integration testing with payment processor delayed due to API access issues 
+- Integration testing with payment processor delayed due to API access issues
+
+
+### **Issue:**
+*   **Status:** `[Open|Investigating|Blocked|Resolved]` (As of [Date])
+*   **Affected Task(s):**
+*   **Description:**
+---

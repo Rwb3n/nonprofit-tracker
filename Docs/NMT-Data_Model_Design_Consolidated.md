@@ -205,17 +205,17 @@ Primary record for organizational information. Used for organizational membershi
 
 ### Contact (Standard Object)
 
-| Field Name | Type | Description | Required |
-|------------|------|-------------|----------|
-| Is Member | Formula (Boolean) | Whether contact has active membership | N/A |
-| Current Membership | Lookup(Membership) | Most recent membership record | No |
-| Membership Status | Formula (Text) | Displays current status | N/A |
-| Days Until Renewal | Formula (Number) | Days until membership expires | N/A |
-| Membership Since | Formula (Date) | Original join date | N/A |
-| Total Membership Years | Formula (Number) | Cumulative years as member | N/A |
-| Engagement Score | Number | Calculated member engagement rating | No |
-| Last Event Attended | Formula (Date) | Most recent event participation | N/A |
-| Events Attended (YTD) | Roll-Up Summary | Count of events this year | N/A |
+| Field Name             | Type               | Description                           | Required |
+| ---------------------- | ------------------ | ------------------------------------- | -------- |
+| Is Member              | Formula (Boolean)  | Whether contact has active membership | N/A      |
+| Current Membership     | Lookup(Membership) | Most recent membership record         | No       |
+| Membership Status      | Formula (Text)     | Displays current status               | N/A      |
+| Days Until Renewal     | Formula (Number)   | Days until membership expires         | N/A      |
+| Membership Since       | Formula (Date)     | Original join date                    | N/A      |
+| Total Membership Years | Formula (Number)   | Cumulative years as member            | N/A      |
+| Engagement Score       | Number             | Calculated member engagement rating   | No       |
+| Last Event Attended    | Formula (Date)     | Most recent event participation       | N/A      |
+| Events Attended (YTD)  | Roll-Up Summary    | Count of events this year             | N/A      |
 
 ### Account (Standard Object)
 
@@ -232,11 +232,20 @@ Primary record for organizational information. Used for organizational membershi
 ## Formula Fields
 
 ### Is Member (Contact)
+*NEW (2025-04-02):*
+```
+IF(ISPICKVAL(Current_Membership__r.Status__c, 'Active'), true, false)
+```
+*OLD:*
 ```
 IF(Current_Membership__r.Status__c = 'Active', true, false)
 ```
 
 ### Membership Status (Contact)
+
+*NEW (2025-04-02):*
+``IF (Current_Membership__c = null, 'Non-Member', TEXT(Current_Membership__r.Status__c))``
+*OLD:*
 ```
 IF(Current_Membership__c = null, 'Non-Member', Current_Membership__r.Status__c)
 ```
@@ -255,9 +264,37 @@ ROUND(
 ```
 
 ### Is Org Member (Account)
+*NEW (2025-04-02):*
+```
+IF(ISPICKVAL(Current_Membership__r.Status__c, 'Active'), true, false)
+```
+*OLD:*
 ```
 IF(Current_Membership__r.Status__c = 'Active', true, false)
 ```
+
+### Membership Status (Account)
+
+*NEW (2025-04-02):*
+``IF (Current_Membership__c = null, 'Non-Member', TEXT(Current_Membership__r.Status__c))``
+*OLD:*
+```
+IF(Current_Membership__c = null, 'Non-Member', Current_Membership__r.Status__c)
+```
+
+### Days Until Renewal (Account)
+```
+IF(Current_Membership__c = null, null, 
+   Current_Membership__r.End_Date__c - TODAY())
+```
+
+### Total Membership Years (Account)
+```
+ROUND(
+  IF(Membership_Since__c = null, 0,
+     (TODAY() - Membership_Since__c) / 365), 1)
+```
+
 
 ## Automation Requirements
 

@@ -67,10 +67,11 @@ The project will follow a five-phase approach:
    - Finalize documentation
 
 5. **Documentation Consistency Phase**
-   - Consolidate redundant documentation
-   - Standardize metadata and formatting
-   - Align implementation backlog with documentation
-   - Create documentation templates and style guide
+   - Review existing documentation for redundancy and inconsistencies.
+   - Consolidate related documents (e.g., data models, flows).
+   - Standardize metadata, formatting, and structure across all documents.
+   - Develop and enforce a documentation style guide and templates.
+   - Ensure alignment between implementation status and documentation.
 
 ## Timeline
 
@@ -80,17 +81,17 @@ The project will follow a five-phase approach:
 | Design | 2025-03-26 | 2025-03-28 | 3 days | ✓ Data Model Documentation<br>✓ Process Flow Diagrams |
 | Build | 2025-03-28 | 2025-04-03 | 7 days | ✓ Custom Objects<br>✓ Flow Automation<br>✓ Reports/Dashboards |
 | Testing | 2025-04-03 | 2025-04-05 | 3 days | ✓ Test Cases<br>✓ Test Results<br>✓ Final Documentation |
-| Documentation Consistency | 2025-04-06 | 2025-04-10 | 5 days | ✓ Consolidated Documentation<br>✓ Standardized Formats<br>✓ Style Guide<br>✓ Document Templates |
+| Documentation Consistency | 2025-04-06 | 2025-04-10 | 5 days | ✓ Consolidated Documentation<br>✓ Standardized Formats<br>✓ Style Guide<br>✓ Document Templates<br>✓ **Status: In Progress / Partially Completed** |
 
 ## Key Deliverables
 
 ### Documentation
-- Data model specification
-- Flow design documents
-- Test cases and results
-- Dashboard specifications
-- Documentation style guide
-- Standardized document templates
+- Data model specification (Consolidated: `Docs/NMT-Data_Model_Design_Consolidated.md`)
+- Flow design documents (Located in `/Flows`)
+- Test cases and results (Located in `/Tests`)
+- Dashboard specifications (`Reports/NMT-Dashboard_Design.md`)
+- Documentation style guide (`Docs/NMT-Documentation_Style_Guide.md`)
+- Standardized document templates (`Docs/Templates/`)
 
 ### Salesforce Configuration
 - Custom objects and fields
@@ -137,11 +138,12 @@ This project will be considered successful when:
 ## Governance
 
 ### Documentation Standards
-- All documents will include standard frontmatter with title, status, and date
-- Field and object naming will follow Salesforce best practices
-- Diagrams will be included for complex relationships and processes
-- Documentation will follow the established style guide
-- Regular documentation audits will maintain consistency
+- All documents will include standard frontmatter with title, status, version, and dates.
+- Field and object naming will follow Salesforce best practices.
+- Diagrams will be included for complex relationships and processes.
+- Documentation **must** follow the established style guide (`Docs/NMT-Documentation_Style_Guide.md`).
+- Standardized templates from `Docs/Templates/` **must** be used for new documents.
+- Regular documentation audits will maintain consistency.
 
 ### Testing Approach
 - Define test cases before building
@@ -171,26 +173,26 @@ This project will be considered successful when:
 4. Configure dashboard refresh settings and subscriptions
 
 ### Documentation Consistency Implementation
-1. Consolidate redundant documentation (Index, Data Model, Flows)
-2. Standardize metadata formats and document structures
-3. Fill content gaps in implementation backlog
-4. Implement cross-referencing between related documents
-5. Create templates and style guide for future documentation
-6. Establish version control practices and documentation audit schedule
+1. **Consolidate** redundant documentation (e.g., Index, Data Model, Flows) into authoritative sources.
+2. **Standardize** metadata formats and document structures using established templates.
+3. **Align** implementation backlog and progress tracking (`Progress.md`) with documentation status.
+4. **Implement** clear cross-referencing between related documents.
+5. **Enforce** the use of the style guide (`Docs/NMT-Documentation_Style_Guide.md`) and templates (`Docs/Templates/`).
+6. **Establish** version control practices (using `CHANGELOG.md`) and a schedule for documentation audits.
 
 ## Final Deliverables Checklist
 
 - [ ] Fully configured Developer org
-- [ ] Comprehensive data model documentation
+- [ ] Comprehensive and consolidated data model documentation
 - [ ] Functional membership onboarding flow
 - [ ] Test case documentation with results
 - [ ] Executive, operational, and engagement dashboards
-- [ ] Complete project documentation
-- [ ] Consolidated documentation with no redundancies
-- [ ] Standardized document formats and metadata
-- [ ] Documentation style guide
-- [ ] Document templates for future use
-- [ ] Completed consistency implementation checklist
+- [ ] Complete and consistent project documentation set
+- [ ] No redundant documentation; clear authoritative sources established
+- [ ] Standardized document formats and metadata across all files
+- [ ] Documentation style guide established and applied
+- [ ] Document templates created and utilized
+- [ ] Completed consistency implementation checklist (as tracked in `Progress.md` or `todo.md`)
 
 ## Next Steps
 

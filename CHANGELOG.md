@@ -6,7 +6,7 @@ phase: "Design"
 status: "Active"
 version: "1.0"
 created: "2025-04-07"
-updated: "2025-04-08"
+updated: "2025-04-09"
 author: "Documentation Team"
 ---
 
@@ -14,9 +14,24 @@ author: "Documentation Team"
 
 This file documents all notable changes to the Nonprofit Membership Tracking project documentation.
 
+## 2025-04-09
+
+### (Human) Updated
+- Enhanced `Docs/NMT-Data_Model_Design_Consolidated.md` with formula field implementation details:
+  - Added workaround for Boolean formulas: using ISPICKVAL instead of = for picklist comparisons
+  - Added guidance on using TEXT function for text output from picklist fields
+  - Documented specific formula for Contact custom field 'Membership Since': `npt_Current_Membership__r.Member_Since__c`
+  - Added membership status formula implementation for Account object
+
+### (Human) Fixed
+- Identified and documented data model implementation challenges in `Docs/NMT-Data_Model_Design_Consolidated.md`:
+  - Documented pending solutions for Account fields: 'Last Event Attended' and 'Total Events Attended'
+  - Documented pending solution for 'Member Contacts' Rollup Summary in Account
+- Updated Progress.md with current implementation status and notes
+
 ## 2025-04-08
 
-### Added
+### (AI) Added
 - Created comprehensive documentation style guide at `Docs/NMT-Documentation_Style_Guide.md` with:
   - Writing style standards (tone, voice, terminology)
   - Formatting rules for common elements
@@ -24,7 +39,7 @@ This file documents all notable changes to the Nonprofit Membership Tracking pro
   - Naming conventions for files and references
   - Document quality checklist
 
-### Updated
+### (AI) Updated
 - Enhanced Data Model Template with Salesforce-specific configuration options:
   - Added fields for Allow Reports, Allow Activities, and Track Field History settings
   - Added detailed guidance on when to enable/disable each option
@@ -36,7 +51,7 @@ This file documents all notable changes to the Nonprofit Membership Tracking pro
 
 ## 2025-04-07
 
-### Added
+### (AI) Added
 - Created root project `README.md` file with a comprehensive overview of the project structure and implementation timeline
 - Created consolidated data model document at `Docs/NMT-Data_Model_Design_Consolidated.md`
 - Created test cases for Payment Status Handling Flow at `Tests/NMT-Payment_Status_Handling_Flow_Test_Cases.md`
@@ -53,7 +68,7 @@ This file documents all notable changes to the Nonprofit Membership Tracking pro
   - Report/Dashboard Template for analytics documentation
   - README file explaining template usage
 
-### Updated
+### (AI) Updated
 - Updated and completed Event Participation Flow design document at `Flows/NMT-Event_Participation_Flow_Design.md`
 - Updated `Tests/README.md` to include references to new test case documents
 - Updated `Reports/README.md` to include references to new report specification documents
@@ -64,7 +79,7 @@ This file documents all notable changes to the Nonprofit Membership Tracking pro
 - Updated todo.md to reflect completed tasks and define new priorities
 - Enhanced `Reports/NMT-Dashboard_Design.md` with detailed component specifications from `Docs/NMT-Dashboard_Component_Specs.md`
 
-### Fixed
+### (AI) Fixed
 - Fixed inconsistent naming conventions in documentation references
 - Standardized formatting across all newly created documents
 - Fixed outdated data model references in flow and test documentation
@@ -72,18 +87,18 @@ This file documents all notable changes to the Nonprofit Membership Tracking pro
 
 ## 2025-04-06
 
-### Added
+### (AI) Added
 - Created initial directory README files for Docs, Flows, Tests, and Reports directories
 - Created Membership Renewal Flow design document at `Flows/NMT-Membership_Renewal_Flow_Design.md`
 - Added AI User Guide for Project Workspaces at `AI_ASSISTANT_GUIDE_FOR_PROJECT_WORKSPACES.md`
 
-### Updated
+### (AI) Updated
 - Updated the todo.md file with comprehensive documentation tasks
 - Updated document frontmatter to follow standardized format
 
 ## 2025-04-05
 
-### Added
+### (AI) Added
 - Initial project documentation setup
 - Created basic data model documentation
 - Created initial flow documentation structure
@@ -91,6 +106,7 @@ This file documents all notable changes to the Nonprofit Membership Tracking pro
 ## How to Use This Changelog
 
 - Entries are listed in reverse-chronological order (newest at the top)
+- Each entry should be labelled either as (AI) or (Human)
 - Each entry should include one of the following categories:
   - **Added**: For new features or documents
   - **Updated**: For changes to existing documents
