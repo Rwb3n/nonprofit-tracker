@@ -63,15 +63,29 @@ Contains specifications and designs for reports and dashboards:
 - **Financial Reports Specs**: Detailed requirements for financial reporting
 - **Engagement Reports Specs**: Requirements for member engagement reporting
 
+### `/AI_HUB`
+
+Contains AI Assistant specific documentation:
+
+- AI Assistant Prompt: `AI_ASSISTANT_GUIDE_FOR_PROJECT_WORKSPACES`
+- `todo.md` files
+
+### `/WORKSPACE_FILES`
+
+Contains Working Files for the Workspace, used primarily for outputs of the 'Human in the Project ':
+
+- `Challenge` Folders
+- `Report` Documents
+- `Progress.md` File
+
 ### Root Directory Files
 
 The root directory contains several important files:
 
 - **README.md**: This file - provides an overview of the project
 - **CHANGELOG.md**: Chronological record of all documentation changes and updates
-- **Progress.md**: Tracks ongoing Human User Tasks
-- **todo.md**: Tracks ongoing AI Assistant tasks
-- **AI_ASSISTANT_GUIDE_FOR_PROJECT_WORKSPACES.md**: Guidelines for AI documentation assistance
+- **Project_Plan.md**:
+- **Requirements.md**:
 
 ## Getting Started
 
@@ -92,9 +106,3 @@ To understand this project:
 | Testing | Validation of functionality | Not Started |
 | Deployment | Implementation to production | Not Started |
 | Training | User and administrator training | Not Started |
-
-## Contact Information
-
-- **Project Manager**: Sarah Johnson (sarah.johnson@example.org)
-- **Lead Developer**: Michael Chen (michael.chen@example.org)
-- **Documentation Team**: documentation@example.org

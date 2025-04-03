@@ -65,7 +65,7 @@ This document tracks the overall progress of the Nonprofit Membership Tracking p
 - [ ] Standard Object Custom Fields (ensuring these are prefixed)
 	- [x] Contact
 		- [x] Formula Fields 
-			- [ ] 2 remain for solving: Last event attended, total events attended
+			- [x] 2 remain for solving: Last event attended, total events attended
 	- [x] Account
 		- [x] added membership status formula guide to [[NMT-Data_Model_Design_Consolidated]]
 		- [ ] 1 remains, Member contact roll up
@@ -151,6 +151,15 @@ This document tracks the overall progress of the Nonprofit Membership Tracking p
 
 ## Notes & Issues
 
+**2025-04-03:**
+- Continuing on from yesterday, working files in WORKSPACE_FILES/standard_object_custom_field_challenge
+- added new field to **membership event participation** object: contact(lookup to contact)
+- ==Reminder for AI: add look for apropriate place to mention that all custom objects have a prefix and all custom fields in standard objects have that same prefix. thanks!
+- ==Reminder for AI: daily check procedures, i.e: Check 1) Progress.md > Notes & Issues 2)Check todo.md 3) create new to do, move over previous todo checklist and deprecate previous todo.md ... this is worth workshopping.
+
+- Below I'm addressing the objects requested for review from yesterday:
+-  Changed **Account**, Last event Attended, from **formula(date)** to **date** & Events attended YTD from **rollup sum** to **number**
+
 **2025-04-02**:
 - Have to review the following custom fields in Account:
 	- Last Event Attended 
@@ -173,8 +182,8 @@ This document tracks the overall progress of the Nonprofit Membership Tracking p
 - Pending decision on additional reporting requirements from Finance department
 - Integration testing with payment processor delayed due to API access issues
 
-
-### **Issue:**
+## **Issue Template:**
+### **Issue:**[Title]
 *   **Status:** `[Open|Investigating|Blocked|Resolved]` (As of [Date])
 *   **Affected Task(s):**
 *   **Description:**

@@ -162,14 +162,15 @@ Primary record for organizational information. Used for organizational membershi
 
 **Key Fields**:
 
-| Field Name | Type | Description | Required |
-|------------|------|-------------|----------|
-| Membership | Lookup(Membership) | Associated membership | Yes |
-| Event | Lookup(Event) | Associated event | Yes |
-| Registration Date | Date | When member registered | Yes |
-| Attendance Status | Picklist | Registered, Attended, No-Show, Cancelled | Yes |
-| Feedback Score | Number(1-5) | Member satisfaction rating | No |
-| Feedback Comments | Long Text Area | Member feedback | No |
+| Field Name        | Type               | Description                              | Required |
+| ----------------- | ------------------ | ---------------------------------------- | -------- |
+| Membership        | Lookup(Membership) | Associated membership                    | Yes      |
+| Event             | Lookup(Event)      | Associated event                         | Yes      |
+| Registration Date | Date               | When member registered                   | Yes      |
+| Attendance Status | Picklist           | Registered, Attended, No-Show, Cancelled | Yes      |
+| Feedback Score    | Number(1-5)        | Member satisfaction rating               | No       |
+| Feedback Comments | Long Text Area     | Member feedback                          | No       |
+| `New` ==Contact== | Lookup(Contact)    | Directly link the participation record   | No       |
 
 **Validation Rules**:
 - Registration Date must be before Event Date
@@ -205,29 +206,29 @@ Primary record for organizational information. Used for organizational membershi
 
 ### Contact (Standard Object)
 
+| Field Name                         | Type                 | Description                           | Required |
+| ---------------------------------- | -------------------- | ------------------------------------- | -------- |
+| Is Member                          | Formula (Boolean)    | Whether contact has active membership | N/A      |
+| Current Membership                 | Lookup(Membership)   | Most recent membership record         | No       |
+| Membership Status                  | Formula (Text)       | Displays current status               | N/A      |
+| Days Until Renewal                 | Formula (Number)     | Days until membership expires         | N/A      |
+| Membership Since                   | Formula (Date)       | Original join date                    | N/A      |
+| Total Membership Years             | Formula (Number)     | Cumulative years as member            | N/A      |
+| Engagement Score                   | Number               | Calculated member engagement rating   | No       |
+| `Updated`==Last Event Attended==   | *formula* - > Date   | Most recent event participation       | N/A      |
+| `Updated`==Events Attended (YTD)== | *formula* - > Number | Count of events this year             | N/A      |
+
+### Account (Standard Object)
+
 | Field Name             | Type               | Description                           | Required |
 | ---------------------- | ------------------ | ------------------------------------- | -------- |
-| Is Member              | Formula (Boolean)  | Whether contact has active membership | N/A      |
+| Is Org Member          | Formula (Boolean)  | Whether account has active membership | N/A      |
 | Current Membership     | Lookup(Membership) | Most recent membership record         | No       |
 | Membership Status      | Formula (Text)     | Displays current status               | N/A      |
 | Days Until Renewal     | Formula (Number)   | Days until membership expires         | N/A      |
 | Membership Since       | Formula (Date)     | Original join date                    | N/A      |
 | Total Membership Years | Formula (Number)   | Cumulative years as member            | N/A      |
-| Engagement Score       | Number             | Calculated member engagement rating   | No       |
-| Last Event Attended    | Formula (Date)     | Most recent event participation       | N/A      |
-| Events Attended (YTD)  | Roll-Up Summary    | Count of events this year             | N/A      |
-
-### Account (Standard Object)
-
-| Field Name | Type | Description | Required |
-|------------|------|-------------|----------|
-| Is Org Member | Formula (Boolean) | Whether account has active membership | N/A |
-| Current Membership | Lookup(Membership) | Most recent membership record | No |
-| Membership Status | Formula (Text) | Displays current status | N/A |
-| Days Until Renewal | Formula (Number) | Days until membership expires | N/A |
-| Membership Since | Formula (Date) | Original join date | N/A |
-| Total Membership Years | Formula (Number) | Cumulative years as member | N/A |
-| Member Contacts | Roll-Up Summary | Count of contacts with memberships | N/A |
+| Member Contacts        | Roll-Up Summary    | Count of contacts with memberships    | N/A      |
 
 ## Formula Fields
 
