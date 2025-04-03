@@ -68,7 +68,13 @@ This document tracks the overall progress of the Nonprofit Membership Tracking p
 			- [x] 2 remain for solving: Last event attended, total events attended
 	- [x] Account
 		- [x] added membership status formula guide to [[NMT-Data_Model_Design_Consolidated]]
-		- [ ] 1 remains, Member contact roll up
+		- [ ] 1 remains, **Member contact roll up - TBI**: (NPSP Affiliations)
+- [ ] ==***New 2025/04/03*** Event Participation Flow **Re-Development**==
+	- [ ] ==Module 1: Registration Flow==
+	- [ ] ==Module 2: Contact Event Metric Update Flow
+	- [ ] ==Module 3: Post Event Engagement Flow
+	- [ ] ==Module 4: Payment & Invoicing Processing Flow
+	- [ ] ==Module 5: Waitlist Management Flow
 - [ ] Page layouts
 - [ ] Role hierarchy setup
 - [ ] Permission sets
@@ -77,7 +83,7 @@ This document tracks the overall progress of the Nonprofit Membership Tracking p
 - [ ] Membership onboarding flow development (50% complete)
 - [ ] Membership renewal flow development (30% complete)
 - [ ] Standard reports configuration
-- [ ] Global value sets
+- [ ] Global value sets ==AI ADVISE: WHAT SETS?!==
 - [ ] Custom dashboard development (15% complete)
 - [ ] Membership metrics report development (10% complete)
 - [ ] Email templates configuration (5% complete)
@@ -156,9 +162,13 @@ This document tracks the overall progress of the Nonprofit Membership Tracking p
 - added new field to **membership event participation** object: contact(lookup to contact)
 - ==Reminder for AI: add look for apropriate place to mention that all custom objects have a prefix and all custom fields in standard objects have that same prefix. thanks!
 - ==Reminder for AI: daily check procedures, i.e: Check 1) Progress.md > Notes & Issues 2)Check todo.md 3) create new to do, move over previous todo checklist and deprecate previous todo.md ... this is worth workshopping.
+- flow halted. decided to break flow into two flows. also breaking down event participation flow into smaller modules
+- 
 
 - Below I'm addressing the objects requested for review from yesterday:
 -  Changed **Account**, Last event Attended, from **formula(date)** to **date** & Events attended YTD from **rollup sum** to **number**
+
+- Another review request was for the **Account** std object's custom field: **Member Contacts**, one solution to review today is to use the **NPSP's Affiliations**
 
 **2025-04-02**:
 - Have to review the following custom fields in Account:

@@ -220,15 +220,15 @@ Primary record for organizational information. Used for organizational membershi
 
 ### Account (Standard Object)
 
-| Field Name             | Type               | Description                           | Required |
-| ---------------------- | ------------------ | ------------------------------------- | -------- |
-| Is Org Member          | Formula (Boolean)  | Whether account has active membership | N/A      |
-| Current Membership     | Lookup(Membership) | Most recent membership record         | No       |
-| Membership Status      | Formula (Text)     | Displays current status               | N/A      |
-| Days Until Renewal     | Formula (Number)   | Days until membership expires         | N/A      |
-| Membership Since       | Formula (Date)     | Original join date                    | N/A      |
-| Total Membership Years | Formula (Number)   | Cumulative years as member            | N/A      |
-| Member Contacts        | Roll-Up Summary    | Count of contacts with memberships    | N/A      |
+| Field Name                | Type               | Description                           | Required |
+| ------------------------- | ------------------ | ------------------------------------- | -------- |
+| Is Org Member             | Formula (Boolean)  | Whether account has active membership | N/A      |
+| Current Membership        | Lookup(Membership) | Most recent membership record         | No       |
+| Membership Status         | Formula (Text)     | Displays current status               | N/A      |
+| Days Until Renewal        | Formula (Number)   | Days until membership expires         | N/A      |
+| Membership Since          | Formula (Date)     | Original join date                    | N/A      |
+| Total Membership Years    | Formula (Number)   | Cumulative years as member            | N/A      |
+| `TBI`==Member Contacts==  | Roll-Up Summary    | Count of contacts with memberships    | N/A      |
 
 ## Formula Fields
 

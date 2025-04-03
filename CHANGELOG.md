@@ -103,6 +103,14 @@ This file documents all notable changes to the Nonprofit Membership Tracking pro
 - Created basic data model documentation
 - Created initial flow documentation structure
 
+## 2025-04-03
+
+### (Human) Updated
+- Updated `Docs/NMT-Data_Model_Design_Consolidated.md`: Changed data types for Account fields: 'Last Event Attended' from Formula(Date) to Date, and 'Events Attended (YTD)' from Roll-Up Summary to Number.
+- Updated `Docs/NMT-Data_Model_Design_Consolidated.md`: Added 'Contact' lookup field to the 'Member Event Participation' custom object.
+- Updated `WORKSPACE_FILES/Progress.md`: Documented decision to halt and refactor the Event Participation Flow into smaller, modular flows (re-development noted).
+- Updated `WORKSPACE_FILES/Progress.md`: Noted investigation into using NPSP Affiliations as a potential solution for the 'Member Contacts' Rollup Summary on the Account object (TBI).
+
 ## How to Use This Changelog
 
 - Entries are listed in reverse-chronological order (newest at the top)
