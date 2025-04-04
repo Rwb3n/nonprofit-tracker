@@ -1,23 +1,16 @@
 ---
-title: "DEPRECATED - Nonprofit Membership Tracking - Event Participation Flow Design (v1)"
+title: "Nonprofit Membership Tracking - Event Participation Flow Design"
 project: "Nonprofit Membership Tracking"
 type: "Flow Design"
 phase: "Design"
-status: "Deprecated"
+status: "Active"
 version: "1.0"
 created: "2025-04-06"
-updated: "2025-04-09"
+updated: "2025-04-07"
 author: "Flow Design Team"
 ---
 
-# DEPRECATED - Event Participation Flow Design (v1)
-
-> **Warning:** This flow design document is deprecated as of 2025-04-09.
->
-> The original monolithic design has been superseded by a modular approach involving multiple smaller flows and an Apex service layer for transactional integrity.
->
-> - For the current design direction, refer to the modular breakdown in `WORKSPACE_FILES/Standard_Object_Custom_Field_Challenge/4. Modular Flow Redev.md` and the Apex service design in `Apex/NMT-Event_Registration_Apex_Service_Design.md`.
-> - The original state of this design (before deprecation) is preserved in `Flows/NMT-Event_Participation_Flow_Design_v_1_locked.md`.
+# Nonprofit Membership Tracking - Event Participation Flow Design
 
 ## Overview
 

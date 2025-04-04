@@ -157,13 +157,18 @@ This document tracks the overall progress of the Nonprofit Membership Tracking p
 
 ## Notes & Issues
 
+2025-04-04:
+- Continuing with Membership Event Participation Audit and Revision.
+- Created Apex Folder. need to update readme & remember to begin creating references to apex as the other documentation files get revised. Will request AI to update readme and we'll discuss the next consistency review after this challenge sprint.
+- Also note (if not already mentioned in changelog) that deprecated files were deleted.
+- All work for today is documented in workspace_files/standard_object_custom_field_challenge/files; 4, 5, 6, 7, 8.
+
 **2025-04-03:**
 - Continuing on from yesterday, working files in WORKSPACE_FILES/standard_object_custom_field_challenge
 - added new field to **membership event participation** object: contact(lookup to contact)
-- ==Reminder for AI: add look for apropriate place to mention that all custom objects have a prefix and all custom fields in standard objects have that same prefix. thanks!
+- ==Reminder for AI: add look for appropriate place to mention that all custom objects have a prefix and all custom fields in standard objects have that same prefix. thanks!
 - ==Reminder for AI: daily check procedures, i.e: Check 1) Progress.md > Notes & Issues 2)Check todo.md 3) create new to do, move over previous todo checklist and deprecate previous todo.md ... this is worth workshopping.
 - flow halted. decided to break flow into two flows. also breaking down event participation flow into smaller modules
-- 
 
 - Below I'm addressing the objects requested for review from yesterday:
 -  Changed **Account**, Last event Attended, from **formula(date)** to **date** & Events attended YTD from **rollup sum** to **number**

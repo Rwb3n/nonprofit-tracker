@@ -16,7 +16,20 @@ This file documents all notable changes to the Nonprofit Membership Tracking pro
 
 ## 2025-04-09
 
+### (AI) Added
+- Created Apex service layer design document `Apex/NMT-Event_Registration_Apex_Service_Design.md`.
+- Created Apex validation layer design document `Apex/NMT-Event_Registration_Validator_Design.md`.
+
+### (AI) Updated
+- Updated `Docs/NMT-Data_Model_Design_Consolidated.md` (v1.2) to reflect revised `Member Event Participation` structure (Contact required, Membership/Account optional) based on data model audit.
+- Updated `Flows/NMT-Event_Participation_Flow_Design.md` with deprecation notice, pointing to modular flow plan and locked version.
+
+### (Human) Added
+- Created `Apex/` directory for service layer code.
+- Created locked versions of original designs: `Docs/NMT-Data_Model_Design_Consolidated_v_1_locked.md` and `Flows/NMT-Event_Participation_Flow_Design_v_1_locked.md`.
+
 ### (Human) Updated
+- Updated `WORKSPACE_FILES/Progress.md` with notes from 2025-04-04.
 - Enhanced `Docs/NMT-Data_Model_Design_Consolidated.md` with formula field implementation details:
   - Added workaround for Boolean formulas: using ISPICKVAL instead of = for picklist comparisons
   - Added guidance on using TEXT function for text output from picklist fields

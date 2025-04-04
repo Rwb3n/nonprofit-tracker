@@ -4,9 +4,9 @@ project: "Nonprofit Membership Tracking"
 type: "Documentation"
 phase: "Design"
 status: "Active"
-version: "1.2"
+version: "1.1"
 created: "2025-03-26"
-updated: "2025-04-09"
+updated: "2025-04-07"
 author: "Documentation Team"
 ---
 
@@ -21,8 +21,6 @@ This document outlines the comprehensive data model design for the Nonprofit Mem
 - Member engagement and participation
 - Membership dues and payments
 
-*Note: This document reflects design decisions made up to the version indicated. A locked version `NMT-Data_Model_Design_Consolidated_v_1_locked.md` captures the state prior to the event participation refactoring audit.*
-
 ## Design Principles
 
 The data model follows these key principles:
@@ -35,7 +33,6 @@ The data model follows these key principles:
 
 ## Entity Relationship Diagram
 
-*Note: The ASCII ERD below reflects the initial design. Refer to the Mermaid ERD generated on 2025-04-09 for the revised structure focusing on `Member Event Participation`.*
 ```
 Contact (1) ◄─────── (n) Membership (n) ─────► (n) Event
     ▲                    │       ▲                     
@@ -157,33 +154,27 @@ Primary record for organizational information. Used for organizational membershi
 
 #### 4. Member Event Participation (Custom Object)
 
-**Purpose**: Junction object to track individual participation in events. The `Contact` is the primary link representing the participant. Links to `Membership` and `Account` are optional, providing context for how the Contact participated (e.g., via an individual membership, representing an organization).
+**Purpose**: Junction object to track member participation in events.
 
 **Relationships**:
-- Contact (Lookup): Required link to the participating Contact.
-- Event (Lookup): Required link to the associated Event.
-- Membership (Lookup): Optional link if participation is associated with a specific Membership record.
-- Account (Lookup): Optional link if participation represents an Organization.
+- Membership (Lookup): Participating membership
+- Event (Lookup): Associated event
 
 **Key Fields**:
 
 | Field Name        | Type               | Description                              | Required |
 | ----------------- | ------------------ | ---------------------------------------- | -------- |
-| Participation ID  | Auto Number        | Unique identifier (MEP-XXXXX)            | Yes      |
-| Contact           | Lookup(Contact)    | Required: Who participated               | Yes      |
-| Event             | Lookup(Event)      | Required: Associated event               | Yes      |
-| Membership        | Lookup(Membership) | Optional: Associated membership          | No       |
-| Account           | Lookup(Account)    | Optional: Associated Organization        | No       |
+| Membership        | Lookup(Membership) | Associated membership                    | Yes      |
+| Event             | Lookup(Event)      | Associated event                         | Yes      |
 | Registration Date | Date               | When member registered                   | Yes      |
 | Attendance Status | Picklist           | Registered, Attended, No-Show, Cancelled | Yes      |
 | Feedback Score    | Number(1-5)        | Member satisfaction rating               | No       |
 | Feedback Comments | Long Text Area     | Member feedback                          | No       |
-
+| `New` ==Contact== | Lookup(Contact)    | Directly link the participation record   | No       |
 
 **Validation Rules**:
 - Registration Date must be before Event Date
 - Feedback Score must be between 1-5 if provided
-- *New Rule:* If `Membership__c` is populated and `Membership__r.Contact__c` is not null, then `Contact__c` must equal `Membership__r.Contact__c` (Ensures consistency for individual memberships).
 
 #### 5. Event (Custom Object)
 
@@ -358,8 +349,6 @@ The data model will require these automation components:
    - Leverage NPSP Household model for family memberships
    - Use NPSP relationship fields for organizational contacts
    - Consider NPSP Affiliations for organizational relationships
-
-7.  **Event Participation Refactoring (2025-04-09)**: The data model for `Member Event Participation` was revised to make `Contact__c` the required lookup, resolving ambiguity and supporting non-member/organizational participation tracking more effectively. The corresponding automation is shifted towards a modular flow design invoking an Apex service layer for transactional integrity. See `Apex/NMT-Event_Registration_Apex_Service_Design.md`.
 
 ## Integration Points
 
