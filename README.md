@@ -6,7 +6,7 @@ phase: "Design"
 status: "Active"
 version: "1.0"
 created: "2025-04-07"
-updated: "2025-04-07"
+updated: "2025-04-09"
 author: "Documentation Team"
 ---
 
@@ -27,7 +27,7 @@ The Nonprofit Membership Tracking system is a comprehensive solution designed fo
 
 ## Project Structure
 
-This project is organized into several directories containing specific types of documentation:
+This project is organized into several directories containing specific types of documentation and code:
 
 ### `/Docs`
 
@@ -39,12 +39,20 @@ Contains the core documentation for the project, including:
 
 ### `/Flows`
 
-Contains design documents for all Salesforce flows that power the application:
+Contains design documents for Salesforce flows that power the application:
 
 - **Membership Onboarding Flow**: Process for creating new memberships
 - **Membership Renewal Flow**: Process for renewing existing memberships
 - **Payment Status Handling Flow**: Logic for processing payments and handling failures
-- **Event Participation Flow**: Process for managing event registrations and attendance
+- **Event Participation Flow**: *DEPRECATED* - See Modular Flow plan in WORKSPACE_FILES and Apex service layer.
+
+### `/Apex`
+
+Contains custom Apex classes supporting the application logic:
+
+- **Service Layer**: Transactional logic (e.g., `EventRegistrationService`).
+- **Validation Layer**: Business rule enforcement (e.g., `EventRegistrationValidator`).
+- **Wrapper Classes**: Data structures for Apex actions.
 
 ### `/Tests`
 
@@ -91,10 +99,11 @@ The root directory contains several important files:
 
 To understand this project:
 
-1. Start by reviewing the [Data Model Design](NMT-Data_Model_Design_Consolidated.md) to understand the underlying data structure
-2. Explore the flow designs in the `/Flows` directory to understand the business processes
-3. Review the dashboard design in `/Reports/NMT-Dashboard_Design.md` to see the analytics capabilities
-4. Check the test cases in `/Tests` to understand how the system is validated
+1. Start by reviewing the [Data Model Design](./Docs/NMT-Data_Model_Design_Consolidated.md) to understand the underlying data structure.
+2. Review the modular flow approach and Apex service design (`/WORKSPACE_FILES` and `/Apex` respectively) for the Event Participation process.
+3. Explore the remaining flow designs in the `/Flows` directory for other business processes.
+4. Review the dashboard design in `/Reports/NMT-Dashboard_Design.md` to see the analytics capabilities.
+5. Check the test cases in `/Tests` to understand how the system is validated.
 
 ## Implementation Timeline
 
