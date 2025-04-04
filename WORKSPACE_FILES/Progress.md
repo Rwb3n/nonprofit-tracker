@@ -49,36 +49,37 @@ This document tracks the overall progress of the Nonprofit Membership Tracking p
 
 ## In Progress Tasks
 
-### Build & Configuration
-- [x] Custom object creation
-	- [x] membership
-	- [x] membership level
-	- [x] membership history
-	- [x] Event
-	- [x] Membership Event Participation
-- [x] Field configuration
-	- [x] membership
-	- [x] membership level
-	- [x] membership history
-	- [x] event
-	- [x] membership event participation
-- [ ] Standard Object Custom Fields (ensuring these are prefixed)
-	- [x] Contact
-		- [x] Formula Fields 
-			- [x] 2 remain for solving: Last event attended, total events attended
-	- [x] Account
-		- [x] added membership status formula guide to [[NMT-Data_Model_Design_Consolidated]]
-		- [ ] 1 remains, **Member contact roll up - TBI**: (NPSP Affiliations)
-- [ ] ==***New 2025/04/03*** Event Participation Flow **Re-Development**==
-	- [ ] ==Module 1: Registration Flow==
-	- [ ] ==Module 2: Contact Event Metric Update Flow
-	- [ ] ==Module 3: Post Event Engagement Flow
-	- [ ] ==Module 4: Payment & Invoicing Processing Flow
-	- [ ] ==Module 5: Waitlist Management Flow
+### Design & Documentation (AI Focus)
+- [x] Data model audit (Event Participation)
+- [x] ERD update (Event Participation)
+- [x] Apex Service Layer Design (`EventRegistrationService`)
+- [x] Apex Validation Layer Design (`EventRegistrationValidator`)
+- [ ] NPSP Integration Analysis Documentation
+- [ ] Testing Strategy Documentation (Event Participation)
+- [x] Update `Docs/NMT-Data_Model_Design_Consolidated.md` (v1.2)
+- [x] Deprecate `Flows/NMT-Event_Participation_Flow_Design.md`
+- [x] Update `CHANGELOG.md` (2025-04-09)
+- [x] Update `README.md` (Add Apex dir)
+
+### Build & Configuration (Human Team Focus)
+- [x] Custom object creation (All core objects)
+- [x] Field configuration (All core objects)
+- [x] Implement Data Model Changes from Audit (Contact required on `Member_Event_Participation__c`)
+- [ ] Standard Object Custom Fields Configuration (Prefixed)
+	- [ ] Contact: Resolve Last Event Attended, Total Events Attended (Likely via Triggered Flow on `Member_Event_Participation__c`)
+	- [ ] Account: Resolve Member Contacts Rollup (Investigate NPSP Affiliations)
+- [ ] Implement Apex Service Layer (`EventRegistrationService`, `Processor`, `Wrappers`)
+- [ ] Implement Apex Validation Layer (`EventRegistrationValidator`)
+- [ ] Event Participation Modular Flow Development (Post-Apex Implementation)
+	- [ ] Module 1: Registration Flow (Screen Flow calling Validator & Service)
+	- [ ] Module 2: Contact Event Metric Update Flow (Triggered Flow)
+	- [ ] Module 3: Post Event Engagement Flow (Scheduled Flow)
+	- [ ] Module 4: Payment & Invoicing Processing Flow (TBD - May integrate with Module 1 or be separate)
+	- [ ] Module 5: Waitlist Management Flow (TBD)
 - [ ] Page layouts
 - [ ] Role hierarchy setup
 - [ ] Permission sets
-- [ ] Validation rules implementation
+- [ ] Validation rules implementation (Standard Salesforce rules)
 - [ ] List views configuration
 - [ ] Membership onboarding flow development (50% complete)
 - [ ] Membership renewal flow development (30% complete)
@@ -88,8 +89,9 @@ This document tracks the overall progress of the Nonprofit Membership Tracking p
 - [ ] Membership metrics report development (10% complete)
 - [ ] Email templates configuration (5% complete)
 
-### Testing
-- [ ] Unit testing for membership onboarding flow (25% complete)
+### Testing (Human Team Focus)
+- [ ] Apex Unit Tests for Service & Validator Layers
+- [ ] Flow Tests for Modular Flows
 - [ ] Integration testing for membership processes (10% complete)
 - [ ] User acceptance testing preparation (5% complete)
 
