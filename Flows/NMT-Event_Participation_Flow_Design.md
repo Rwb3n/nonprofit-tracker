@@ -446,10 +446,10 @@ Contact.Engagement_Score__c = Contact.Engagement_Score__c + attendancePoints - r
 
 ## Related Documents
 
-- [Data Model Design](../Docs/NMT-Data_Model_Design_Consolidated.md)
+- [Data Model Design](NMT-Data_Model_Design_Consolidated.md)
 - [Membership Onboarding Flow Design](NMT-Membership_Onboarding_Flow_Design.md)
 - [Membership Renewal Flow Design](NMT-Membership_Renewal_Flow_Design.md)
 - [Payment Status Handling Flow Design](NMT-Payment_Status_Handling_Flow_Design.md)
-- [Event Participation Flow Test Cases](../Tests/NMT-Event_Participation_Flow_Test_Cases.md)
-- [Engagement Reports Specifications](../Reports/NMT-Engagement_Reports_Specs.md)
-- [Dashboard Design](../Reports/NMT-Dashboard_Design.md) 
+- [Event Participation Flow Test Cases](NMT-Event_Participation_Flow_Test_Cases.md)
+- [Engagement Reports Specifications](NMT-Engagement_Reports_Specs.md)
+- [Dashboard Design](NMT-Dashboard_Design.md) 

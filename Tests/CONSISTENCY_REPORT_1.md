@@ -104,7 +104,7 @@ Based on references in other documents, test documentation may be missing for:
 ### README.md References
 
 The README.md references:
-- ✅ [Membership Renewal Flow Test Cases](Tests/NMT-Membership_Renewal_Flow_Test_Cases.md)
+- ✅ [Membership Renewal Flow Test Cases](NMT-Membership_Renewal_Flow_Test_Cases.md)
 - ❌ Does not reference NMT-Flow_Test_Cases.md
 
 ### INDEX.MD References

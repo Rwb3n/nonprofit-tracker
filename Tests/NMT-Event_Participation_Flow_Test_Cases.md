@@ -608,7 +608,7 @@ The Event Participation Flow will be considered successfully validated when:
 
 ## Related Documents
 
-- [Event Participation Flow Design](../Flows/NMT-Event_Participation_Flow_Design.md)
+- [Event Participation Flow Design](NMT-Event_Participation_Flow_Design.md)
 - [Payment Status Handling Flow Test Cases](NMT-Payment_Status_Handling_Flow_Test_Cases.md)
 - [Membership Onboarding Flow Test Cases](NMT-Membership_Onboarding_Flow_Test_Cases.md)
-- [Data Model Design](../Docs/NMT-Data_Model_Design_Consolidated.md) 
+- [Data Model Design](NMT-Data_Model_Design_Consolidated.md) 

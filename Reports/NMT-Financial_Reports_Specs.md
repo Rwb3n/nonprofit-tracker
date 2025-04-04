@@ -467,6 +467,6 @@ RECOMMENDATIONS
 ## Related Documents
 
 - [Dashboard Design](NMT-Dashboard_Design.md)
-- [Data Model Design](../Docs/NMT-Data_Model_Design_Consolidated.md)
-- [Payment Status Handling Flow Design](../Flows/NMT-Payment_Status_Handling_Flow_Design.md)
-- [Membership Renewal Flow Design](../Flows/NMT-Membership_Renewal_Flow_Design.md) 
+- [Data Model Design](NMT-Data_Model_Design_Consolidated.md)
+- [Payment Status Handling Flow Design](NMT-Payment_Status_Handling_Flow_Design.md)
+- [Membership Renewal Flow Design](NMT-Membership_Renewal_Flow_Design.md) 

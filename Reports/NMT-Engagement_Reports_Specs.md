@@ -496,5 +496,5 @@ Member Name | Level | Engagement Score | Key Activities | Leverage Opportunity
 
 - [Dashboard Design](NMT-Dashboard_Design.md)
 - [Financial Reports Specifications](NMT-Financial_Reports_Specs.md)
-- [Data Model Design](../Docs/NMT-Data_Model_Design_Consolidated.md)
-- [Event Participation Flow Design](../Flows/NMT-Event_Participation_Flow_Design.md) 
+- [Data Model Design](NMT-Data_Model_Design_Consolidated.md)
+- [Event Participation Flow Design](NMT-Event_Participation_Flow_Design.md) 

@@ -103,7 +103,7 @@ The key differences are:
 ### README.md References
 
 The README.md references:
-- ✅ [Membership Onboarding Flow Design](Flows/NMT-Membership_Onboarding_Flow_Design.md)
+- ✅ [Membership Onboarding Flow Design](NMT-Membership_Onboarding_Flow_Design.md)
 - ❌ Does not reference NMT-Membership_Onboarding_Flow.md
 
 ### INDEX.MD References

@@ -623,7 +623,7 @@ The dashboards are designed for three primary audience groups:
 
 ## Related Documents
 
-- [Data Model Design](../Docs/NMT-Data_Model_Design_Consolidated.md)
+- [Data Model Design](NMT-Data_Model_Design_Consolidated.md)
 - [Financial Reports Specifications](NMT-Financial_Reports_Specs.md)
 - [Engagement Reports Specifications](NMT-Engagement_Reports_Specs.md)
-- [Membership Renewal Flow Design](../Flows/NMT-Membership_Renewal_Flow_Design.md) 
+- [Membership Renewal Flow Design](NMT-Membership_Renewal_Flow_Design.md) 

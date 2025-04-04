@@ -91,7 +91,7 @@ The root directory contains several important files:
 
 To understand this project:
 
-1. Start by reviewing the [Data Model Design](Docs/NMT-Data_Model_Design_Consolidated.md) to understand the underlying data structure
+1. Start by reviewing the [Data Model Design](NMT-Data_Model_Design_Consolidated.md) to understand the underlying data structure
 2. Explore the flow designs in the `/Flows` directory to understand the business processes
 3. Review the dashboard design in `/Reports/NMT-Dashboard_Design.md` to see the analytics capabilities
 4. Check the test cases in `/Tests` to understand how the system is validated

@@ -369,8 +369,8 @@ The data model will require these automation components:
 
 ## Related Documents
 
-- [Membership Onboarding Flow Design](../Flows/NMT-Membership_Onboarding_Flow_Design.md)
-- [Membership Renewal Flow Design](../Flows/NMT-Membership_Renewal_Flow_Design.md)
-- [Payment Status Handling Flow Design](../Flows/NMT-Payment_Status_Handling_Flow_Design.md)
-- [Event Participation Flow Design](../Flows/NMT-Event_Participation_Flow_Design.md)
-- [Dashboard Design](../Reports/NMT-Dashboard_Design.md) 
+- [Membership Onboarding Flow Design](NMT-Membership_Onboarding_Flow_Design.md)
+- [Membership Renewal Flow Design](NMT-Membership_Renewal_Flow_Design.md)
+- [Payment Status Handling Flow Design](NMT-Payment_Status_Handling_Flow_Design.md)
+- [Event Participation Flow Design](NMT-Event_Participation_Flow_Design.md)
+- [Dashboard Design](NMT-Dashboard_Design.md) 

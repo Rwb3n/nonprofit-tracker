@@ -267,5 +267,5 @@ To implement these standards:
 
 ## Related Documents
 
-- [Project README](../README.md)
-- [Documentation Consistency Report](CONSISTENCY_REPORT_1.md) 
+- [Project README](0.%20MAIN/0.4CAREER%20HUNTER/002.%20sprint2/PROJECTS/NONPROFIT_TRACKER/README.md)
+- [Documentation Consistency Report](0.%20MAIN/0.4CAREER%20HUNTER/002.%20sprint2/PROJECTS/NONPROFIT_TRACKER/Docs/CONSISTENCY_REPORT_1.md) 

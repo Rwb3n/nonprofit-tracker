@@ -59,7 +59,7 @@ These templates are maintained by the Documentation Team. If you identify areas 
 
 ## Document Structure Standards
 
-All templates follow the [Document Structure Standards](../NMT-Document_Structure_Standards.md), which define:
+All templates follow the [Document Structure Standards](NMT-Document_Structure_Standards.md), which define:
 
 - Required frontmatter fields
 - Standard heading hierarchy
@@ -69,5 +69,5 @@ All templates follow the [Document Structure Standards](../NMT-Document_Structur
 
 ## Related Documents
 
-- [Document Structure Standards](../NMT-Document_Structure_Standards.md)
-- [Project README](../../README.md) 
+- [Document Structure Standards](NMT-Document_Structure_Standards.md)
+- [Project README](0.%20MAIN/0.4CAREER%20HUNTER/002.%20sprint2/PROJECTS/NONPROFIT_TRACKER/README.md) 

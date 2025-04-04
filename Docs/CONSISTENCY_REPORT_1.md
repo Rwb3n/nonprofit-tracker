@@ -113,7 +113,7 @@ The key differences are:
 The README.md references the following Docs files:
 - ✅ [Data Model Design](Docs/NMT-Data_Model_Design.md)
 - ✅ [Dashboard Component Specs](Docs/NMT-Dashboard_Component_Specs.md)
-- ✅ [Implementation Plan](Docs/NMT-Implementation_Plan.md)
+- ✅ [Implementation Plan](NMT-Implementation_Plan.md)
 
 ### INDEX.MD References
 

@@ -602,7 +602,7 @@ The Payment Status Handling Flow will be considered successfully validated when:
 
 ## Related Documentation
 
-- [Payment Status Handling Flow Design](../Flows/NMT-Payment_Status_Handling_Flow_Design.md)
-- [Data Model Design](../Docs/NMT-Data_Model_Design_Consolidated.md)
-- [Membership Onboarding Flow Design](../Flows/NMT-Membership_Onboarding_Flow_Design.md)
-- [Membership Renewal Flow Design](../Flows/NMT-Membership_Renewal_Flow_Design.md) 
+- [Payment Status Handling Flow Design](NMT-Payment_Status_Handling_Flow_Design.md)
+- [Data Model Design](NMT-Data_Model_Design_Consolidated.md)
+- [Membership Onboarding Flow Design](NMT-Membership_Onboarding_Flow_Design.md)
+- [Membership Renewal Flow Design](NMT-Membership_Renewal_Flow_Design.md) 

@@ -286,8 +286,8 @@ Before finalizing any document, verify:
 ## Related Documents
 
 - [Document Structure Standards](NMT-Document_Structure_Standards.md)
-- [Templates Directory](Templates/README.md)
-- [Data Model Template](Templates/NMT-Data_Model_Template.md)
-- [Flow Design Template](Templates/NMT-Flow_Design_Template.md)
-- [Test Case Template](Templates/NMT-Test_Cases_Template.md)
-- [Report/Dashboard Template](Templates/NMT-Report_Dashboard_Template.md) 
+- [Templates Directory](0.%20MAIN/0.4CAREER%20HUNTER/002.%20sprint2/PROJECTS/NONPROFIT_TRACKER/Docs/Templates/README.md)
+- [Data Model Template](NMT-Data_Model_Template.md)
+- [Flow Design Template](NMT-Flow_Design_Template.md)
+- [Test Case Template](NMT-Test_Cases_Template.md)
+- [Report/Dashboard Template](NMT-Report_Dashboard_Template.md) 
